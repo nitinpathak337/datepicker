@@ -1,42 +1,16 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.react-calendar__tile--now {
+  background-color: lightgray !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.react-calendar__tile--hasActive {
+  background: none !important;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.react-calendar__tile--active {
+  color: inherit !important;
+  background: inherit !important;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.highlight {
+  background-color: #90ee90 !important;
 }
